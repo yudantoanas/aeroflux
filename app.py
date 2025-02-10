@@ -1,12 +1,11 @@
 import os
 import discord
-import os
-from datetime import datetime
+import pyjokes
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from dotenv import load_dotenv
 
-load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+load_dotenv(override=True)
+
 intents = discord.Intents.default()
 intents.message_content = True
 
@@ -17,7 +16,8 @@ scheduler = AsyncIOScheduler()
 async def on_ready():
     print(f'We have logged in as {client.user}')
 
-    scheduler.add_job(send_scheduled_message, 'interval', seconds=5)
+    testingChannelId = int(os.environ.get('TESTING_CHANNEL_ID'))
+    scheduler.add_job(send_scheduled_pyjokes, 'interval', seconds=1, args=[testingChannelId])
     scheduler.start()
 
 @client.event
@@ -25,16 +25,15 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('Hello,'):
+    if message.content.startswith('Hi!'):
         await message.channel.send('Hello!')
 
-async def send_scheduled_message():
-    channel_id = 1338359801608142919  # Replace with your channel ID
+async def send_scheduled_pyjokes(channel_id):
     channel = client.get_channel(channel_id)
 
     if channel:
-        await channel.send(f"📢 Scheduled message! The current time is {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        await channel.send(pyjokes.get_joke())
     else:
-        print("⚠️ Channel not found!")
+        print("Channel not found!")
 
-client.run(TOKEN)
+client.run(os.environ.get('DISCORD_TOKEN'))
