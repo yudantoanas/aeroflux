@@ -17,7 +17,7 @@ async def on_ready():
     print(f'We have logged in as {client.user}')
 
     testingChannelId = int(os.environ.get('TESTING_CHANNEL_ID'))
-    scheduler.add_job(send_scheduled_pyjokes, 'interval', seconds=1, args=[testingChannelId])
+    scheduler.add_job(send_scheduled_pyjokes, 'interval', days=1, args=[testingChannelId])
     scheduler.start()
 
 @client.event
