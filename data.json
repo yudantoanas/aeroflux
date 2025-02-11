@@ -1,0 +1,147 @@
+[
+    {
+        "announced_at":"2025-02-12",
+        "branch": "HCK",
+        "phase": 0,
+        "format": "[batch_name]\nBerikut ini adalah link pengumpulan tugas selama Phase 0:\n\n1. GC 1\n    * Deadline : [deadline] pukul 23:59 WIB\n    * URL : [link]\n\n2. GC 2\n    * Deadline : [deadline] pukul 23:59 WIB\n    * URL : [link]\n\n3. GC 3\n    * Deadline : [deadline] pukul 23:59 WIB\n    * URL : [link]\n\n4. Milestone 1\n    * Deadline : [deadline] pukul 23:59 WIB\n    * URL : [link]\n\n> **Notes**\n>  - Link tugas akan diaktivasi pada saat hari penugasan dimulai.\n>  - Diharapkan untuk tidak mengumpulkan melebihi waktu deadline (telat == 0).\n>  - Link untuk Live Code akan diberikan pada hari H.\n>  - Informasi ini akan selalu berada di `Pinned Message`",
+        "batch_name": "@HCK-Batch-XXX",
+        "assignments": [
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            }
+        ]
+    },
+    {
+        "branch": "RMT",
+        "phase": 0,
+        "format": "[batch_name]\nBerikut ini adalah link pengumpulan tugas selama Phase 0:\n\n1. GC 1\n    * Deadline : [deadline] pukul 23:59 WIB\n    * URL : [link]\n\n2. GC 2\n    * Deadline : [deadline] pukul 23:59 WIB\n    * URL : [link]\n\n3. GC 3\n    * Deadline : [deadline] pukul 23:59 WIB\n    * URL : [link]\n\n4. Milestone 1\n    * Deadline : [deadline] pukul 23:59 WIB\n    * URL : [link]\n\n> **Notes**\n>  - Link tugas akan diaktivasi pada saat hari penugasan dimulai.\n>  - Diharapkan untuk tidak mengumpulkan melebihi waktu deadline (telat == 0).\n>  - Link untuk Live Code akan diberikan pada hari H.\n>  - Informasi ini akan selalu berada di `Pinned Message`",
+        "batch_name": "@RMT-Batch-YYY",
+        "assignments": [
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            }
+        ]
+    },
+    {
+        "branch": "HCK",
+        "phase": 1,
+        "format": "[batch_name]\nBerikut ini adalah URL pengumpulan tugas selama Phase 1:\n\n1. GC 4\n    * Deadline : [deadline] 18:00 WIB\n    * URL: [link]\n4. Milestone 2\n    * Deadline : [deadline] 18:00 WIB\n    * URL: [link]\n\n**Notes**\n> - Link tugas akan diaktivasi pada saat hari penugasan dimulai.\n> - Diharapkan untuk tidak mengumpulkan melebihi waktu deadline (telat == 0).\n> - Link untuk Live Code akan diberikan pada saat hari H.\n> - Informasi ini akan selalu berada di `Pinned Message`",
+        "batch_name": "@HCK-Batch-XXX",
+        "assignments": [
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            }
+        ]
+    },
+    {
+        "branch": "RMT",
+        "phase": 1,
+        "format": "[batch_name]\nBerikut ini adalah URL pengumpulan tugas selama Phase 1:\n\n1. GC 4\n    * Deadline : [deadline] 18:00 WIB\n    * URL: [link]\n4. Milestone 2\n    * Deadline : [deadline] 18:00 WIB\n    * URL: [link]\n\n**Notes**\n> - Link tugas akan diaktivasi pada saat hari penugasan dimulai.\n> - Diharapkan untuk tidak mengumpulkan melebihi waktu deadline (telat == 0).\n> - Link untuk Live Code akan diberikan pada saat hari H.\n> - Informasi ini akan selalu berada di `Pinned Message`",
+        "batch_name": "@RMT-Batch-YYY",
+        "assignments": [
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            }
+        ]
+    },
+    {
+        "branch": "HCK",
+        "phase": 2,
+        "format": "[batch_name]\nBerikut ini adalah URL pengumpulan tugas selama Phase 2:\n\n1. GC 7\n    * Deadline : [deadline] 18:00 WIB\n    * URL: [link]\n2. Milestone 3 \n    * Deadline : [deadline] 23:59 WIB\n    * URL: [link]\n\n**Notes**\n> - Link tugas akan diaktivasi pada saat hari penugasan dimulai.\n> - Diharapkan untuk tidak mengumpulkan melebihi waktu deadline (telat == 0).\n> - Link untuk Live Code akan diberikan pada saat hari H.\n> - Informasi ini akan selalu berada di `Pinned Message`",
+        "batch_name": "@HCK-Batch-XXX",
+        "assignments": [
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            }
+        ]
+    },
+    {
+        "branch": "RMT",
+        "phase": 2,
+        "format": "[batch_name]\nBerikut ini adalah URL pengumpulan tugas selama Phase 2:\n\n1. GC 7\n    * Deadline : [deadline] 18:00 WIB\n    * URL: [link]\n2. Milestone 3 \n    * Deadline : [deadline] 23:59 WIB\n    * URL: [link]\n\n**Notes**\n> - Link tugas akan diaktivasi pada saat hari penugasan dimulai.\n> - Diharapkan untuk tidak mengumpulkan melebihi waktu deadline (telat == 0).\n> - Link untuk Live Code akan diberikan pada saat hari H.\n> - Informasi ini akan selalu berada di `Pinned Message`",
+        "batch_name": "@RMT-Batch-YYY",
+        "assignments": [
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            },
+            {
+                "deadline": "2025-01-03",
+                "link": "https://classroom.github.com/a/7GM9RnLa"
+            }
+        ]
+    }
+]
