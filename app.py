@@ -34,7 +34,9 @@ async def on_message(message):
 
     if message.content.startswith('Hi!'):
         await message.channel.send("Hello!")
-        # await generateAssignmentAnnouncement(int(os.environ.get('TESTING_CHANNEL_ID')))
+
+    # if message.content.startswith('/generate assignment phase 0 rmt'):
+    #     await generateAssignmentAnnouncement(message.channel.id)
 
 
 async def send_scheduled_pyjokes(channel_id):
@@ -48,10 +50,10 @@ async def send_scheduled_pyjokes(channel_id):
 
 async def generateAssignmentAnnouncement(channel_id):
     channel = client.get_channel(channel_id)
-    res = generateText('data.json')
+    res = generateText()
     await channel.send("**Assignment Announcement**")
     if res:
         await channel.send(res)
-            
+
 
 client.run(os.environ.get('DISCORD_TOKEN'))
