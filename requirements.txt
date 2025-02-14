@@ -2,3 +2,4 @@ discord.py
 apscheduler
 pyjokes
 python-dotenv
+pymongo
