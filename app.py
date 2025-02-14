@@ -23,7 +23,7 @@ async def on_ready():
     scheduler.add_job(
         send_scheduled_pyjokes, 'cron', hour=9, minute=0, args=[testingChannelId])
     scheduler.add_job(
-        generateAssignmentAnnouncement, 'cron', hour=10, minute=30, args=[testingChannelId])
+        generateAssignmentAnnouncement, 'cron', hour=10, minute=30, start_date="2025-02-11", args=[testingChannelId])
     scheduler.start()
 
 
