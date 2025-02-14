@@ -35,8 +35,8 @@ async def on_message(message):
     if message.content.startswith('Hi!'):
         await message.channel.send("Hello!")
 
-    # if message.content.startswith('/generate assignment phase 0 rmt'):
-    #     await generateAssignmentAnnouncement(message.channel.id)
+    if message.content.startswith('Announce'):
+        await generateAssignmentAnnouncement(message.channel.id)
 
 
 async def send_scheduled_pyjokes(channel_id):
