@@ -21,7 +21,7 @@ async def on_ready():
 
     testingChannelId = int(os.environ.get('TESTING_CHANNEL_ID'))
     scheduler.add_job(
-        send_scheduled_pyjokes, 'cron', hour=9, minute=0, args=[testingChannelId])
+        send_scheduled_pyjokes, 'cron', hour=9, minute=0, start_date="2025-02-11", args=[testingChannelId])
     scheduler.add_job(
         generateAssignmentAnnouncement, 'cron', hour=10, minute=30, start_date="2025-02-11", args=[testingChannelId])
     scheduler.start()
@@ -55,5 +55,5 @@ async def generateAssignmentAnnouncement(channel_id):
     if res:
         await channel.send(res)
 
-
+print(os.environ.get('DISCORD_TOKEN'))
 client.run(os.environ.get('DISCORD_TOKEN'))

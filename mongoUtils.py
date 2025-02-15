@@ -8,7 +8,7 @@ load_dotenv(override=True)
 
 def getDataByCurrentDate():
     client = MongoClient(os.environ.get('MONGO_URL'))
-    print("test", os.environ.get('MONGO_URL'))
+
     result = client['sandbox']['templates'].find_one(
         filter={"announced_at": {'$lte': datetime.now(tz=timezone.utc)}}
     )
