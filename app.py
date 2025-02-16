@@ -65,7 +65,6 @@ async def generateAssignmentAnnouncement(channel_id):
             content = content.replace('[deadline]', deadline, 1)
             content = content.replace('[link]', x['link'], 1)
 
-
         await channel.send("**Assignment Announcement**")
         await channel.send(content)
         return
