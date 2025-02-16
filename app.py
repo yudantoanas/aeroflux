@@ -54,5 +54,4 @@ async def generateAssignmentAnnouncement(channel_id):
     if res:
         await channel.send(res)
 
-if __name__ == "__main__":
-    client.run(os.getenv('DISCORD_TOKEN'))
+client.run(os.getenv('DISCORD_TOKEN'))
