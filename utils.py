@@ -2,8 +2,8 @@ from datetime import datetime
 from mongoUtils import getDataByCurrentDate
 
 
-def generateText():
-    data = getDataByCurrentDate()
+async def generateText():
+    data = await getDataByCurrentDate()
     if data != None and 'announced_at' in data.keys():
         content = data['format']
         content = content.replace('[batch_name]', data['batch_name'])

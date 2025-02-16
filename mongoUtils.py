@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-def getDataByCurrentDate():
+async def getDataByCurrentDate():
     client = MongoClient(os.getenv('MONGO_URL'))
 
     result = client['sandbox']['templates'].find_one(

@@ -49,7 +49,7 @@ async def send_scheduled_pyjokes(channel_id):
 
 async def generateAssignmentAnnouncement(channel_id):
     channel = client.get_channel(channel_id)
-    res = generateText()
+    res = await generateText()
     await channel.send("**Assignment Announcement**")
     if res:
         await channel.send(res)
