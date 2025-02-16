@@ -1,4 +1,3 @@
-import datetime
 from utils import generateText
 import os
 import discord
@@ -6,7 +5,7 @@ import pyjokes
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from dotenv import load_dotenv
 
-load_dotenv(override=True)
+load_dotenv()
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -19,7 +18,7 @@ scheduler = AsyncIOScheduler()
 async def on_ready():
     print(f'We have logged in as {client.user}')
 
-    testingChannelId = int(os.environ.get('TESTING_CHANNEL_ID'))
+    testingChannelId = int(os.getenv('TESTING_CHANNEL_ID'))
     scheduler.add_job(
         send_scheduled_pyjokes, 'cron', hour=9, minute=0, start_date="2025-02-11", args=[testingChannelId])
     scheduler.add_job(
@@ -55,5 +54,4 @@ async def generateAssignmentAnnouncement(channel_id):
     if res:
         await channel.send(res)
 
-print(os.environ.get('DISCORD_TOKEN'))
-client.run(os.environ.get('DISCORD_TOKEN'))
+client.run(os.getenv('DISCORD_TOKEN'))
