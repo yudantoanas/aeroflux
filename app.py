@@ -1,4 +1,5 @@
-from utils import generateText
+from datetime import datetime, timezone
+from pymongo import MongoClient
 import os
 import discord
 import pyjokes
@@ -49,9 +50,25 @@ async def send_scheduled_pyjokes(channel_id):
 
 async def generateAssignmentAnnouncement(channel_id):
     channel = client.get_channel(channel_id)
-    res = await generateText()
-    await channel.send("**Assignment Announcement**")
-    if res:
-        await channel.send(res)
+    client = MongoClient(os.getenv('MONGO_URL'))
 
-client.run(os.getenv('DISCORD_TOKEN'))
+    data = client['sandbox']['templates'].find_one(
+        filter={"announced_at": {'$lte': datetime.now(tz=timezone.utc)}}
+    )
+
+    if data != None and 'announced_at' in data.keys():
+        content = data['format']
+        content = content.replace('[batch_name]', data['batch_name'])
+        for x in data['assignments']:
+            deadline = datetime.strptime(
+                x['deadline'], "%Y-%m-%d").strftime('%A, %d %B %Y')
+            content = content.replace('[deadline]', deadline, 1)
+            content = content.replace('[link]', x['link'], 1)
+
+
+        await channel.send("**Assignment Announcement**")
+        await channel.send(content)
+        return
+
+if __name__ == "__main__":
+    client.run(os.getenv('DISCORD_TOKEN'))
