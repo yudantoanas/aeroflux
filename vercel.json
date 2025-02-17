@@ -1,9 +1,8 @@
 {
-    "devCommand": "python app.py",
     "builds": [
         {
             "src": "app.py",
-            "use": "@vercel/python"
+            "use": "@imptype/vercel-python@4.3.35"
         }
     ],
     "routes": [
