@@ -70,4 +70,4 @@ async def generateAssignmentAnnouncement(channel_id):
         return
 
 
-client.run(os.getenv('DISCORD_TOKEN'))
+app = client.run(os.getenv('DISCORD_TOKEN'))
