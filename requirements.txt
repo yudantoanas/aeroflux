@@ -3,4 +3,3 @@ apscheduler
 pyjokes
 python-dotenv
 pymongo
-uvicorn

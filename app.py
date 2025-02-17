@@ -50,9 +50,9 @@ async def send_scheduled_pyjokes(channel_id):
 
 async def generateAssignmentAnnouncement(channel_id):
     channel = client.get_channel(channel_id)
-    client = MongoClient(os.getenv('MONGO_URL'))
+    mongoClient = MongoClient(os.getenv('MONGO_URL'))
 
-    data = client['sandbox']['templates'].find_one(
+    data = mongoClient['sandbox']['templates'].find_one(
         filter={"announced_at": {'$lte': datetime.now(tz=timezone.utc)}}
     )
 
@@ -70,4 +70,4 @@ async def generateAssignmentAnnouncement(channel_id):
         return
 
 
-app = client.run(os.getenv('DISCORD_TOKEN'))
+client.run(os.getenv('DISCORD_TOKEN'))
